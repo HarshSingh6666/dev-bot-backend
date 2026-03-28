@@ -2,7 +2,7 @@ const express = require("express");
 const multer = require("multer");
 const fs = require("fs");
 const router = express.Router();
-const History = require("../models/History");
+const History = require("../models/Conversation");
 const authenticate = require("../middleware/authMiddleware"); // ✅ Import auth
 
 const GEMINI_KEY = process.env.GEMINI_API_KEY;
